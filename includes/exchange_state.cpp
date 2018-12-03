@@ -56,10 +56,6 @@ namespace eosio {
       print( "quote: ", quote_symbol, "\n" );
       print( "ex: ", supply.symbol, "\n" );
 
-      print( "to: ", to, "\n" );
-      print( "ex_symbol: ", ex_symbol, "\n" );
-      print( "sell_symbol: ", sell_symbol, "\n" );
-
       if( sell_symbol != ex_symbol ) {
          if( sell_symbol == base_symbol ) {
             from = convert_to_exchange( base, from );
