@@ -12,9 +12,9 @@
 
 using namespace eosio;
 using namespace std;
-class signdappplay: public contract {
+class coinsafetesd: public contract {
 public:
-    signdappplay(account_name self): contract(self){};
+    coinsafetesd(account_name self): contract(self){};
     void transfer(account_name from, account_name to, asset quantity, string memo);
 
 private:
@@ -84,4 +84,4 @@ extern "C" { \
     } \
 } \
 
-EOSIO_ABI_EX(signdappplay, (transfer))
+EOSIO_ABI_EX(coinsafetesd, (transfer))

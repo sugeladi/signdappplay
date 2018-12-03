@@ -1,13 +1,13 @@
-#include "signdappplay.hpp"
+#include "coinsafetesd.hpp"
 
-void signdappplay::transfer(account_name from, account_name to, asset quantity, string memo)
+void coinsafetesd::transfer(account_name from, account_name to, asset quantity, string memo)
 {
     if (from == _self || to != _self) {
         return;
     }
 
     // don't do anything on transfers from our reference account
-    if (from == N(signdappplay)) {
+    if (from == N(coinsafetesd)) {
       return;
     }
     asset buyamount = buyrambytes(3);
