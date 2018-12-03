@@ -51,10 +51,14 @@ namespace eosio {
       auto base_symbol  = base.balance.symbol;
       auto quote_symbol = quote.balance.symbol;
 
-      //print( "From: ", from, " TO ", asset( 0,to), "\n" );
-      //print( "base: ", base_symbol, "\n" );
-      //print( "quote: ", quote_symbol, "\n" );
-      //print( "ex: ", supply.symbol, "\n" );
+      print( "From: ", from, " TO ", asset( 0,to), "\n" );
+      print( "base: ", base_symbol, "\n" );
+      print( "quote: ", quote_symbol, "\n" );
+      print( "ex: ", supply.symbol, "\n" );
+
+      print( "to: ", to, "\n" );
+      print( "ex_symbol: ", ex_symbol, "\n" );
+      print( "sell_symbol: ", sell_symbol, "\n" );
 
       if( sell_symbol != ex_symbol ) {
          if( sell_symbol == base_symbol ) {
